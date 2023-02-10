@@ -22,6 +22,8 @@ int main() {
 
 	//nn.set_activation_function_output(FANN::SIGMOID_SYMMETRIC);
 	//nn.set_activation_function_hidden(FANN::SIGMOID_SYMMETRIC);
+	
+	nn.save("test.train");
 
 	nn.train_on_file("test.train", max_epochs, epochs_between_reports, desired_error);
 

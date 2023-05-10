@@ -81,8 +81,6 @@ int main() {
         num2 = calculation.substr(opPlace + 1, iCount - 1);
         num3 = calculation.substr(signPlace + 1, -1);
 
-        cout << op << endl;
-
         if (num1 == "x") {
             num2 = op + num2;
             x = stod(num3) - stod(num2);

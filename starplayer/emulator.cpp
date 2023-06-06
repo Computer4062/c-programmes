@@ -56,7 +56,6 @@ void Emulator::Beep(){
 void Emulator::Quit(){
     SDL_CloseAudioDevice(deviceId);
     SDL_FreeWAV(wavBuffer);
-    SDL_Quit();
 
     SDL_DestroyWindow(window);
     SDL_DestroyRenderer(renderer);

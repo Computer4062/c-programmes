@@ -1,0 +1,22 @@
+training neural network
+--------------------------
+
+layer_1 dot product + bias
+layer_2 dot product + bias
+prediction = layer_2
+
+derror_dpredeiction = 2 * (prediction - target)
+dprediction_dlayer1 = sigmoid_deriv(layer1)
+dlayer1_dbias  = 1
+dlayer1_dweights = (0 * weights) + (1 * input)
+
+derror_dbias = derror_dprediction * dprediction_dlayer1 * dlayer1_dweights
+derror_dweights = derror_dprediction * dprediction_dlayer1 * dlayer1_dweights
+
+return derror_dbias, derror_dweights
+
+Updating the neural network
+---------------------------------
+
+bias = bias - (derror_dbias * learning_rate)
+weights = weigths - (derror_dweights * selflearning_rate)

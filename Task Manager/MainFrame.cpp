@@ -110,6 +110,8 @@ void MainFrame::OnClearButtonClicked(wxCommandEvent& evt)
 
 	if (0 == deleted)                                                   //If nothing is checked clear everyting
 		checkListBox->Clear();
+
+	SaveTasks(); 
 }
 
 void MainFrame::AddTaskFromInput()
@@ -133,6 +135,7 @@ void MainFrame::DeleteSelectedTask()
 		return;
 	
 	checkListBox->Delete(selectedIndex);
+	SaveTasks();
 }
 
 void MainFrame::MoveSelectedTask(int offset)

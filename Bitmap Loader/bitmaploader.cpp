@@ -1,28 +1,26 @@
 #include "SDL.h"
 #include <iostream>
+#include <process.h>
 
 using namespace std;
 
 int main(int argc, char* argv[]){
-    SDL_Init(SDL_INIT_EVERYTHING);
-
-    const char filename[] = "image.bmp";
+    SDL_Init(SDL_INIT_VIDEO);
+    SDL_Surface* image = SDL_LoadBMP(argv[1]);
 
     SDL_Window* window = SDL_CreateWindow(
-        "image",
+        argv[1],
         SDL_WINDOWPOS_UNDEFINED,
         SDL_WINDOWPOS_UNDEFINED,
-        1000, 1000,
+        image -> w, image -> h, 
         SDL_WINDOW_RESIZABLE
     );
 
-    SDL_Surface *image = SDL_LoadBMP(filename);
-
-    if (image == NULL){
-        cout << "image could not be loaded" << endl << SDL_GetError() << endl;
+    if(image == NULL){
+        cout << "Error in loading file" << endl;
+        cout << SDL_GetError() << endl;
         SDL_DestroyWindow(window);
         SDL_Quit();
-        return 1;
     }
 
     SDL_Surface* screen = SDL_GetWindowSurface(window);
@@ -36,7 +34,7 @@ int main(int argc, char* argv[]){
         while(SDL_PollEvent(&event)){
             if(event.type == SDL_QUIT)
                 quit = true;
-            
+
             if(event.type == SDL_KEYDOWN)
                 quit = true;
         }

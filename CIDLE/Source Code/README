@@ -1,0 +1,51 @@
+(c) CIDLE 
+
+CIDLE is a IDE for C and C++ progammes
+
+Saving Files
+------------
+
+When you click on the menu you will see something called SAVE AS.
+Click on that and you will be able to save your code in 
+your computer.
+
+Keep in mind that only saved code can be run.
+
+Temporaly Saving Files
+-----------------------
+
+Every time you open the app your code would have already 
+been saved as long as you pressed Ctrl + S.
+
+The code gets saved in a specific file called temp.txt
+
+Running Files
+-------------
+
+When you want to run the file clikc on the RUN button in the
+menu, this would create an exe file in the saved location.
+
+If you saved your project as new.cpp the exe files name would be
+new.exe.
+
+For a file to run it should be saved first.
+
+Customizer
+----------
+
+The customizer can be opened in the menu in the code section. This
+allows you to change the font, font color, and background color.
+
+To increase the size of the font click Ctrl and roll your mouse wheel.
+
+New
+---
+
+When you click on the new button everything would be reseted. This means 
+that the content in temp.txt would be reseted and the text in the code box
+would go away.
+
+It also means you would not be able to run the previouse programme that you 
+just coded and you would have to open it if you want to run it.
+
+Created By: Mihan Tharinda Edirisinghe

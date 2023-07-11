@@ -1,0 +1,9 @@
+Auto Clicker 
+
+This app works by taking a cps and once you click the start button the app would wait 2 seconds
+before starting clicking.
+
+The app would only start clicking when it is minimized and once you open the app again
+it would stop clicking.
+
+It does this with the help of wxWidgets.

@@ -7,7 +7,7 @@ cv::Mat GetFrame(const int screenx, const int screeny, const int width, const in
     HWND hwnd = GetDesktopWindow();
 
     // Get handles to a device context (DC)
-    const HDC hwindowDC = GetDC(hwnd);
+    const HDC hwindowDC           = GetDC(hwnd);
     const HDC hwindowCompatibleDC = CreateCompatibleDC(hwindowDC);
 
     SetStretchBltMode(hwindowCompatibleDC, COLORONCOLOR);
@@ -63,7 +63,7 @@ int main() {
     cv::VideoWriter video(
         "output.mp4",
         cv::VideoWriter::fourcc('X', '2', '6', '4'),
-        25,
+        10,
         cv::Size(width, height)
     );
 
@@ -74,12 +74,20 @@ int main() {
     }
 
     // Iterate over a series of images and write them to the video
-    for (int i = 0; i < 100; i++) {
+    while (true) {
         // Get screenshot
         cv::Mat frame = GetFrame(screenx, screeny, width, height);
 
         // Write the frame to the video
         video.write(frame);
+
+        //Make the frame smaller in size
+        cv::Mat resizedFrame;
+        cv::resize(frame, resizedFrame, cv::Size(640, 480));
+
+        cv::imshow("Frame", resizedFrame);
+        if (cv::waitKey(1) == 'q')
+            break;
     }
 
     // Release the video writer and close the output file

@@ -1,0 +1,10 @@
+A programme that can generate colors with a given RGB value
+
+You can input the color as follows: 255 255 255
+In which case this becomes white.
+
+If you want to input a color like red you have to do it like this: 255 000 000
+
+This will generate a bitmap image with that color.
+
+The color will not only be created as a bitmap image ,but it will also be displayed.

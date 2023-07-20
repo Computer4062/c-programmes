@@ -1,0 +1,5 @@
+A place a jpg, png, jpeg or bmp image into the folder where BackgroundRemover.exe file is there.
+When you run BackgroundRemover.exe the file name should then appear.
+Type the filename in and it will act as a background.
+There are a lot of bugs like it does not work properly for people ,since it works best with non moving objects.
+The image generated alse has a very dark contrast.

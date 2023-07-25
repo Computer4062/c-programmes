@@ -1,0 +1,7 @@
+Creates a rectangle that falls down at a certain speed.
+When you start the app click on the white screen and 2 buttons would appear.
+Click the green button to increase the gravity and Red button to decrease the gravity.
+You can see the gravity in the window title.
+After that click on the X on the top of the window.
+This should clear the screen.
+Click any where on the screen and a rectangle should fall down at the gravity you asked it to fall down at.

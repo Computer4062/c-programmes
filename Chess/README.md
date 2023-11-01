@@ -1,5 +1,5 @@
 Play chess with friends
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.PNG)
 
 Hit 'z' on your keyboard to undo a move

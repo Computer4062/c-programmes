@@ -1,6 +1,6 @@
 FLAPPY BIRD - TERMINAL EDITION
 
-Your bird is flying through the sky enters a weired parthernon like structure in the sky,
+Your bird is flying through the sky enters a strange parthernon like structure in the sky,
 Make sure it doesn't hit any of the pillars!
 
 ![1](https://github.com/Computer4062/c-programmes/assets/87608466/dea5f6bc-e9b7-41c1-bfed-1e7a60bd7b43)

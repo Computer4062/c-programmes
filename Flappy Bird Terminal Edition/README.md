@@ -1,4 +1,4 @@
-FLAPPY BIRD - TERMINAL EDITION
+FLAPPY BIRD - TERMINAL EDITION \n
 Your bird is flying through the sky enters a weired parthernon like structure in the sky,
 Make sure it doesn't hit any of the pillars!
 
